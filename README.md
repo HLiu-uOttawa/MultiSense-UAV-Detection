@@ -8,6 +8,10 @@ pip freeze > requirements.txt
 
 # MkDocs
 
+.venv\Scripts\activate
+cd mydocs
+mkdocs serve
+
 ## Install MkDocs
 pip install mkdocs
 pip install mkdocs-material

@@ -1,1 +1,92 @@
-site_name: My Docs
+site_name: UAV detection and tracking by using multi-sensor fusion
+site_url: https://example.com
+site_description: 使用 MkDocs Material 构建的文档
+site_author: Your Name
+
+# Repository Information
+repo_name: MultiSense-UAV-Detection
+repo_url: https://github.com/HLiu-uOttawa/MultiSense-UAV-Detection
+edit_uri: edit/main/docs/
+
+# Navigation Structure
+nav:
+  - Home: index.md
+  - Quick Start: quickstart.md
+  - Environment:
+      - Overview: env/index.md
+      - WSL2 (Ubuntu): env/wsl2.md
+      - Jetson Orin (Ubuntu 22.04): env/jetson.md
+  - Guide:
+      - Installation: guide/installation.md
+      - Configuration: guide/configuration.md
+  - API Reference: api.md
+  - About: about.md
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - toc.integrate
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: material/book-open-page-variant
+
+# Markdown extensions
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+# plugins
+plugins:
+  - search:
+      lang: en
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: true
+      enable_creation_date: false
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/username
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/username
