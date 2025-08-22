@@ -1,8 +1,9 @@
 # MultiSense-UAV-Detection
 Multi-sensor fusion for reliable UAV detection and tracking
 
+apt install python3.10-venv
 python3 -m venv .venv
-.venv\Scripts\activate
+source .venv/bin/activate
 deactivate
 pip freeze > requirements.txt
 
