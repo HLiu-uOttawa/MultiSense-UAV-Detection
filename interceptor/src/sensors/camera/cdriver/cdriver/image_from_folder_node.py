@@ -2,17 +2,15 @@
 import rclpy
 from rclpy.node import Node
 
-class MyNode(Node):
+class ImageFromFolderNode(Node):
     def __init__(self):
-        super().__init__("test_node")
-        self.get_logger().info("Hello from ROS2")
+        super().__init__('image_from_folder_node')
 
-        
-        
 def main(args=None):
     rclpy.init(args=args)
-    node = MyNode()
+    node = ImageFromFolderNode()
     rclpy.spin(node)
+
     rclpy.shutdown()
 
 if __name__ == '__main__':

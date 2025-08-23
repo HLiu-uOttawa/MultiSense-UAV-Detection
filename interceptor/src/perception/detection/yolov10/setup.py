@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'cdriver'
+package_name = 'yolov10'
 
 setup(
     name=package_name,
@@ -20,7 +20,6 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "test_node = cdriver.camera_driver_node:main"
         ],
     },
 )
