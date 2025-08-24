@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            "detection_yolov8_node = yolov8.detection_yolov8_node:main",
         ],
     },
 )

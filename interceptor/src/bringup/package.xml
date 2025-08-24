@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>bringup</name>
+  <version>0.0.0</version>
+  <description>This package is for bring up the whole system running on Jetson Orin NX or wsl2</description>
+  <maintainer email="Brian.Liu@uottawa.ca">user</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Some packages for testing -->
+  <exec_depend>demo_node_cpp</exec_depend>
+  <exec_depend>demo_node_py</exec_depend>
+
+  <exec_depend>cdriver</exec_depend>  <!-- The package of camera driver -->
+  <exec_depend>rdriver</exec_depend>  <!-- The package of radar driver -->
+  <exec_depend>gdriver</exec_depend>  <!-- The package of GPS driver -->
+  <exec_depend>idriver</exec_depend>  <!-- The package of IMU driver -->
+
+  <exec_depend>yolov8</exec_depend>  <!-- The package of IMU driver -->
+
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
