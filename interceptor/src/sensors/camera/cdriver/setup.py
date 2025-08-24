@@ -20,7 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "test_node = cdriver.camera_driver_node:main"
+            "test_node = cdriver.camera_driver_node:main",
+            "image_offline_node = cdriver.image_from_folder_node:main",
+            "image_online_node = cdriver.image_from_camera_node:main",
         ],
     },
 )
