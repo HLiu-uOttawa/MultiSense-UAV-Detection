@@ -12,6 +12,10 @@ class ImageFromFolderNode(Node):
         # Declare parameters
         self.declare_parameter("topic", "/camera/image_raw")
         
+        topic = self.get_parameter("topic").get_parameter_value().string_value
+
+        self.get_logger().info(f"Publishing images on topic: {topic}")
+
         topic     = self.get_parameter("topic").get_parameter_value().string_value
         qos = QoSProfile(
             history=HistoryPolicy.KEEP_LAST,

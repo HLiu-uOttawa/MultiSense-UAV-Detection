@@ -1,0 +1,4 @@
+image_from_folder_node:
+  ros__parameters:
+    folder: "/home/user/images_demo"  # path to image folder
+    topic: "/camera/image_raw"  # ROS topic name for publishing images
