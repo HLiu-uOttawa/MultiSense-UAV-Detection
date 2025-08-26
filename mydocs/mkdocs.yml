@@ -8,19 +8,29 @@ repo_name: MultiSense-UAV-Detection
 repo_url: https://github.com/HLiu-uOttawa/MultiSense-UAV-Detection
 edit_uri: edit/main/docs/
 
-# Navigation Structure
 nav:
   - Home: index.md
-  - Quick Start: quickstart.md
-  - Environment:
-      - Overview: env/index.md
-      - WSL2 (Ubuntu): env/wsl2.md
-      - Jetson Orin (Ubuntu 22.04): env/jetson.md
-  - Guide:
+  - Quick Start: getting-started/index.md
+  - Environments:
+      - Overview: environment/index.md
+      - WSL2 (Ubuntu): environment/wsl2.md
+      - Jetson Orin (Ubuntu 22.04): environment/jetson-orin.md
+  - Guides:
       - Installation: guide/installation.md
       - Configuration: guide/configuration.md
-  - API Reference: api.md
-  - About: about.md
+      - Running Offline Mode: guide/offline-mode.md
+      - Running Online Mode: guide/online-mode.md
+  - Reference:
+      - API Overview: reference/index.md
+      - ROS 2 Topics: reference/ros2-topics.md
+      - Parameters: reference/parameters.md
+      - CLI: reference/cli.md
+  - Troubleshooting: troubleshooting/index.md
+  - FAQ: faq.md
+  - About:
+      - Project: about/index.md
+      - Release Notes: about/release-notes.md
+
 
 theme:
   name: material
@@ -28,13 +38,15 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.indexes
     - navigation.top
     - search.suggest
     - search.highlight
     - toc.integrate
     - content.code.copy
-    - content.code.annotate
     - content.action.edit
+    - content.code.annotate
+
   palette:
     - scheme: default
       primary: indigo
