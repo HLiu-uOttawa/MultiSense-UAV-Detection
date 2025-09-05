@@ -100,6 +100,7 @@ class RadarFilePublisherNode(Node):
         msg = String()
         msg.data = content
         self.pub.publish(msg)
+        self.last_t = td.t
         self.get_logger().info(f"Published: {os.path.basename(td.path)} @ {td.t.isoformat(timespec='milliseconds')}")
 
     def _scan_and_sort(self, directory: str, prefix: str) -> List[TDFile]:
